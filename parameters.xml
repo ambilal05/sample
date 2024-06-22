@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"> <!-- @BeforeSuite -->
+<parameter name="User" value="j2ee"></parameter>
+<parameter name="driver" value="chrome"></parameter>
+<parameter name="url" value="https://petstore.octoperf.com/actions/Catalog.action"></parameter>
+  <test thread-count="5" name="Test"> <!-- @BeforeTest -->
+    <classes> <!-- @BeforeClass -->
+      <class name="testng.parameters.dataprovider.ParameterSample">
+		  <methods>
+			  
+		  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
